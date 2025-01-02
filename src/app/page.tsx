@@ -1,3 +1,9 @@
+import ExamplePopover from "@/components/ui/example";
+
 export default function Page() {
-  return <h1 className="text-blue-900">Hello World!</h1>;
+  return (
+    <div className="flex h-dvh items-center justify-center">
+      <ExamplePopover />
+    </div>
+  );
 }

@@ -1,4 +1,6 @@
+import ThemeSwitcher from "@/components/theme-switcher";
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import "./styles.css";
@@ -24,11 +26,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${geistSans.variable} ${geistMono.variable}`}
+    >
+      <body className={`font-sans antialiased`}>
+        <ThemeProvider attribute="class">
+          <div className="isolate">{children}</div>
+          <ThemeSwitcher />
+        </ThemeProvider>
       </body>
     </html>
   );
