@@ -31,9 +31,13 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} scheme-light-dark not-dark:scheme-light dark:scheme-dark`}
     >
-      <body className={`antialiased`}>
+      <body
+        className={`min-w-[320px] overflow-y-scroll bg-white antialiased dark:bg-black`}
+      >
         <ThemeProvider attribute="class">
-          <div className="isolate">{children}</div>
+          <div className="relative isolate flex min-h-dvh flex-col border-x border-gray-200 lg:ms-12 lg:me-12">
+            <div className="flex grow flex-col">{children}</div>
+          </div>
           <ThemeSwitcher />
         </ThemeProvider>
       </body>
