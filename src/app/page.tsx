@@ -1,3 +1,4 @@
+import LogoIcon from "@/components/ui/logo-icon";
 import Link from "next/link";
 
 export default function Page() {
@@ -9,7 +10,10 @@ export default function Page() {
 
       <div className="border-r border-gray-300" />
       <div className="w-full max-w-[490px] px-8 py-12 text-balance">
-        <h1 className="mb-3 text-2xl font-bold text-gray-950">Petrillo UI</h1>
+        <div className="mb-4 flex flex-nowrap items-end gap-4 text-nowrap">
+          <LogoIcon />
+          <h1 className="text-2xl font-bold text-gray-950">Petrillo UI</h1>
+        </div>
         <p className="mb-6 text-gray-700">
           Fundamental React components built on top of{" "}
           <Link
@@ -37,7 +41,7 @@ export default function Page() {
           </Link>
           . Open Source.
         </p>
-        <div className="flex gap-6">
+        <div className="flex gap-4">
           <Link
             href={"/docs"}
             className="text-blue-600 underline hover:text-blue-500"
