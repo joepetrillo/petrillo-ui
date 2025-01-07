@@ -44,13 +44,13 @@ export default function Page() {
         <div className="flex gap-4">
           <Link
             href={"/docs"}
-            className="text-blue-600 underline hover:text-blue-500"
+            className="text-blue-500 underline hover:text-blue-700 dark:hover:text-blue-300"
           >
             Docs
           </Link>
           <Link
             href={"https://github.com/joepetrillo/petrillo-ui"}
-            className="text-blue-600 underline hover:text-blue-500"
+            className="text-blue-500 underline hover:text-blue-700 dark:hover:text-blue-300"
             target="_blank"
           >
             GitHub
