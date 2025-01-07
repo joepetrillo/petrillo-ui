@@ -9,9 +9,18 @@ export default function Page() {
           Fundamental React components built on top of Base UI and TailwindCSS.
           Inspired by Shadcn UI. Open Source.
         </p>
-        <Link href={"/docs"} className="text-blue-500 underline">
-          Get Started
-        </Link>
+        <div className="flex gap-6">
+          <Link href={"/docs"} className="text-blue-500 underline">
+            Docs
+          </Link>
+          <Link
+            href={"https://github.com/joepetrillo/petrillo-ui"}
+            className="text-blue-500 underline"
+            target="_blank"
+          >
+            GitHub
+          </Link>
+        </div>
       </div>
     </div>
   );
