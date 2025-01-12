@@ -6,6 +6,8 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
+  --breakpoint-gridVert: 1343px;
+
   --color-gray-50: light-dark(oklch(98% 0.25% 264), oklch(17% 1% 264));
   --color-gray-100: light-dark(
     oklch(12% 9.5% 264 / 5%),

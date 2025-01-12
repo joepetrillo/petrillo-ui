@@ -28,7 +28,7 @@ export default function LogoIcon({
   };
 
   return (
-    <div className={cn("inline-block", sizeClasses[size], className)}>
+    <div className={cn(sizeClasses[size], className)}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 200 200"

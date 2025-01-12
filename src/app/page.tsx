@@ -10,7 +10,7 @@ export default function Page() {
 
       <div className="border-r border-gray-300" />
       <div className="w-full max-w-[490px] px-8 py-12 text-balance">
-        <div className="mb-4 flex flex-nowrap items-end gap-4 text-nowrap">
+        <div className="mb-4 flex flex-nowrap items-center gap-4 text-nowrap">
           <LogoIcon />
           <h1 className="text-2xl font-bold text-gray-950">Petrillo UI</h1>
         </div>
