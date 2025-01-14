@@ -1,4 +1,5 @@
 import LogoIcon from "@/components/ui/logo-icon";
+import { ScrollArea } from "@base-ui-components/react/scroll-area";
 import Link from "next/link";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -37,22 +38,161 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="relative mx-auto grid w-full max-w-7xl grow grid-cols-[17rem_1fr] items-start">
         <div className="absolute top-0 bottom-0 left-0 z-20 w-[1px] bg-gray-300 opacity-0 transition-opacity gridVert:opacity-100"></div>
         <div className="absolute top-0 right-0 bottom-0 z-20 w-[1px] bg-gray-300 opacity-0 transition-opacity gridVert:opacity-100"></div>
-        <nav className="sticky top-[73px] h-full max-h-[calc(100dvh-146px)] overflow-y-scroll px-6">
-          <div className="flex flex-col items-stretch gap-2">
-            <Link
-              href={"/docs"}
-              className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
-            >
-              Docs
-            </Link>
-            <Link
-              href={"/components"}
-              className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
-            >
-              Components
-            </Link>
-          </div>
-        </nav>
+        <div className="sticky top-[73px]">
+          <ScrollArea.Root className="h-[calc(100dvh-146px)] px-3">
+            <ScrollArea.Viewport className="h-full overscroll-contain px-3 py-1 focus-visible:outline-2 focus-visible:outline-blue-600">
+              <nav className="flex flex-col items-stretch gap-2">
+                <Link
+                  href={"/docs"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Docs
+                </Link>
+                <Link
+                  href={"/components"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Components
+                </Link>
+                <Link
+                  href={"/docs"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/components"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/docs"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/components"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/docs"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/components"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/docs"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/components"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/docs"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/components"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/docs"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/components"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/docs"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/components"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/docs"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/components"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/docs"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/components"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/docs"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/components"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/docs"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+                <Link
+                  href={"/components"}
+                  className="bg-gray-50 px-4 py-1 hover:bg-gray-100"
+                >
+                  Foo
+                </Link>
+              </nav>
+            </ScrollArea.Viewport>
+            <ScrollArea.Scrollbar className="m-2 flex w-1 justify-center rounded bg-gray-300 opacity-75 transition-opacity delay-300 data-[hovering]:opacity-100 data-[hovering]:delay-0 data-[hovering]:duration-75 data-[scrolling]:opacity-100 data-[scrolling]:delay-0 data-[scrolling]:duration-75">
+              <ScrollArea.Thumb className="w-full rounded bg-gray-500" />
+            </ScrollArea.Scrollbar>
+          </ScrollArea.Root>
+        </div>
         <main className="py-[73px] pr-12 pl-6">{children}</main>
       </div>
       {/* footer */}
