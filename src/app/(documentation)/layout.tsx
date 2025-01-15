@@ -35,7 +35,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </header>
       </div>
       {/* main page area */}
-      <div className="relative mx-auto grid w-full max-w-7xl grow grid-cols-[17rem_1fr] items-start">
+      <div className="relative mx-auto grid w-full max-w-7xl grow grid-cols-[15.5rem_1fr] items-start">
         <div className="absolute top-0 bottom-0 left-0 z-20 w-[1px] bg-gray-300 opacity-0 transition-opacity gridVert:opacity-100"></div>
         <div className="absolute top-0 right-0 bottom-0 z-20 w-[1px] bg-gray-300 opacity-0 transition-opacity gridVert:opacity-100"></div>
         <Sidebar />

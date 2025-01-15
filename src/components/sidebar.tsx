@@ -38,7 +38,7 @@ export default function Sidebar() {
         <ScrollArea.Viewport className="h-full overscroll-contain px-2 py-1">
           <nav className="flex flex-col items-stretch">
             {/* overview */}
-            <h3 className="mb-2 font-bold">Overview</h3>
+            <h3 className="mb-1 font-bold">Overview</h3>
             {overviewLinks.map((title) => (
               <Link
                 key={title}
@@ -49,7 +49,7 @@ export default function Sidebar() {
               </Link>
             ))}
             {/* components */}
-            <h3 className="mt-8 mb-2 font-bold">Components</h3>
+            <h3 className="mt-6 mb-1 font-bold">Components</h3>
             {componentLinks.map((component) => (
               <Link
                 key={component}
